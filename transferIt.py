@@ -25,7 +25,7 @@ def moveToMusic(mp3List, myMusic):
     musicFiles = os.listdir(myMusic)
     for mp3 in mp3List:
         if mp3[0] not in musicFiles:
-            shutil.move(mp3[1],myMusic)
+            shutil.copy2(mp3[1],myMusic)
         #     print (mp3[0] + wasMoved)
         # else:
         #     print (mp3[0] + alreadyExists)
@@ -59,7 +59,7 @@ def evaluateTransfer(songs):
         print ("No MP3s to transfer!")
         print ("=====================")
     else:
-        #moveToMusic(songs, music_Folder)
+        moveToMusic(songs, music_Folder)
         moveToUSB(songs, usb_folder)
     return
 
