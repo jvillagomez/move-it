@@ -3,7 +3,7 @@ import os
 
 dwnld_Folder = "C:\\Users\\Juan Antonio\\Downloads\\" #My Downloads Folder
 music_Folder = "C:\\Users\\Juan Antonio\\Music\\Unorganized\\"
-usb_folder = "Q:\\APyTest"
+usb_folder = "Q:\\Unorganized"
 
 alreadyExists = " is already present :/"
 wasMoved = " has been moved :)"
@@ -33,7 +33,7 @@ def moveToMusic(mp3List, myMusic):
     print ("==========================================")
     print ("MyMusic transfer COMPLETED")
     print ("==========================================")
-    return  (0)
+    return
 
 def moveToUSB(mp3List, myUsb):
     print ("==========================================")
